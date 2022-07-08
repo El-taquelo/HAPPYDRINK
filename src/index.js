@@ -6,14 +6,17 @@ import ReactDOM from 'react-dom/client';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'material-icons/iconfont/material-icons.css';
 import 'antd/dist/antd.min.css';
-import Aplicaciones from './Rutas/Aplicaciones';
+import Aplicacion from './Aplicacion';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Aplicaciones />
+    <Aplicacion/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
   </React.StrictMode>
 );
 

@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Menu from './Menu/Menu';
+//import Inicio from './Paginas/Home'
+//import Home from './Paginas/Home';
 
 function App() {
  
   return (
-    <Menu/>
+    <div></div>
   );
 }
 

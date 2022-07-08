@@ -1,17 +1,14 @@
 import React from 'react'
 
-import Menu from '../Menu/Menu';
-import Footer from '../Menu/Footer';
-
-import './Layout.css';
+import Inicio from '../Inicio/Inicio';
+import Footer from '../Inicio/Footer';
 
 
 function Layout({Children}) {
   return (
     <div>
-        <Menu/>
+        <Inicio/>
         {Children}
-        <Footer/>
     </div>
   )
 }

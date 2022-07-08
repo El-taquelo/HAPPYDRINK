@@ -1,27 +1,29 @@
 import React from 'react'
 //son los elemntos que se utilizan para definir rutas
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 //Se inporta el archivo Layouts para dividir las divisiones de nuestra app
 
+import Home from '../Paginas/Home';
 import Layout from '../Componentes/Layouts/Layout';
-import About from '../Paginas/Estilos/About';
-import NotFound from "../Paginas/NotFound";
-import Home from '../Paginas/Estilos/Home';
+import Categoria from '../Paginas/Categoria';
+import Usuario from"../Paginas/Usuario";
+import Catalogo from "../Paginas/Catalogo"
+import Inicio from '../Componentes/Inicio/Inicio';
 
 function Rutas() {
   return (
-    <div>
-        <Router>
-            <Layout>
-                <Routes>
-                    <Route exact path="/" element={<Home/>}/>
-                    <Route exact path="/about" element={<About/>}/>
-                    <Route path='*' element={<NotFound/>}/>
-                </Routes>
-            </Layout>
-        </Router>
-    </div>
+      <div>
+         <Router>
+             <Layout/>
+                 <Routes>
+                     <Route exact path="/Home" element = {<Home/>}/>
+                     <Route exact path='/Categoria'element={<Categoria/>}/>
+                     <Route exact path="/Usuario" element={<Usuario/>}/>
+                     <Route exact path="/Catalogo" element={<Catalogo/>}/>
+                 </Routes>
+         </Router>
+      </div>
   )
 }
-
+ 
 export default Rutas
